@@ -168,6 +168,9 @@ const CIPHER_TYPE_LABELS: Record<CipherType, string> = {
   selector: "vault-items-table",
   templateUrl: "./vault-items-table.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: "tw-flex tw-flex-col tw-flex-1 tw-min-h-0",
+  },
   imports: [
     BitCellComponent,
     BitCellDefDirective,
